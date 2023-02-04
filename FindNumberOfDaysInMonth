@@ -1,4 +1,12 @@
-System.out.println("Shtypni muajin prej 1-12");
+
+/*Random month) Write a program that randomly generates an integer between 1 
+	      and 12 and displays the English month names January, February, . . . , December 
+	      for the numbers 1, 2, . . . , 12, accordingly.*/
+	      
+public class FindDaysOfMonth{	      
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+                System.out.println("Shtypni muajin prej 1-12");
 		int muaji = sc.nextInt();
 		String month = "";
 		switch(muaji) {
@@ -55,3 +63,4 @@ System.out.println("Shtypni muajin prej 1-12");
 		else if (tek) {
 			System.out.println(month + " "+ viti+ " ka "+31+" dite");
 		}
+}
