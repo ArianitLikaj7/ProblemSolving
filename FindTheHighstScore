@@ -1,0 +1,30 @@
+/*Write a program that prompts the user to enter the number of students and each student’s name and score, and finally displays the name 
+          of the student with the highest score. Use the next() method in the Scanner
+          class to read a name, rather than using the nextLine() method. Assume that the 
+          number of students is at least 1*/
+
+   public class HighestScore{
+    public static void main (String [] args){
+    Scanner sc = new Scanner(System.in);
+    double highScore = 0;
+		String studentWithHighScore = "";
+		
+		System.out.println("Shtypni numrin e studenteve");
+		int n = sc.nextInt();
+		
+		for (int i  = 0; i < n; i++) {
+			System.out.println("Shtypni emrin e studentit "+(i+1)+ " :");
+			String emri = sc.next();
+			System.out.println("Shtypni noten e studentit "+(i+1)+" :");
+			double nota = sc.nextDouble();
+			
+			if (nota > highScore) {
+				highScore = nota;
+			    studentWithHighScore = emri;
+				
+			}
+		}
+		
+		System.out.println("Emri i studentit eshte "+studentWithHighScore + " dhe nota e tij eshte "+ highScore );
+          }
+          }
