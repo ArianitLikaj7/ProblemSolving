@@ -1,0 +1,40 @@
+/*(Find the two highest scores) Write a program that prompts the user to enter the 
+		number of students and each student’s name and score, and finally displays the 
+		student with the highest score and the student with the second-highest score. Use 
+		the next() method in the Scanner class to read a name rather than using the 
+		nextLine() method. Assume that the number of students is at least 2.*/
+    
+    String studentWithHighScore = "";
+		int highScore = 0;
+		String  secondStudentWithHighScore = "";
+		int secondHighScore = 0;
+		
+		System.out.println("Shtypni numrin e studentave");
+		int n = sc.nextInt();
+		
+		for(int i = 0; i < n; i++) {
+			System.out.println("Shtypni emrin e studentit "+(i+1));
+			String emri = sc.next();
+			System.out.println("Shtypni noten e studentit "+(i+1));
+			int nota = sc.nextInt();
+			
+			if (nota > highScore) {
+				int tempN = highScore;
+				highScore = nota;
+				secondHighScore = tempN;
+				
+				String tempE = studentWithHighScore;
+				studentWithHighScore = emri;
+				secondStudentWithHighScore = tempE;
+				
+			}
+		}
+		
+		System.out.println("Emri i studentit me noten me te madhe eshte "+studentWithHighScore + " dhe nota e tij eshte "+ highScore );
+		System.out.println("Emri i studentit te dyte me noten me te madhe eshte "+secondStudentWithHighScore + " dhe nota e tij eshte "+ secondHighScore);
+		
+	}
+
+	}
+	
+    
