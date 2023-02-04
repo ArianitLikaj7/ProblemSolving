@@ -1,0 +1,13 @@
+
+/*Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.*/
+
+public boolean nearHundred(int n) {
+ int nr1 = n;
+  if ((nr1 >= 90 && nr1 <= 110)){
+    return true;
+  }
+  if(nr1 >= 190 && nr1 <= 210){
+    return true;
+  }
+  else {return false;}
+}
