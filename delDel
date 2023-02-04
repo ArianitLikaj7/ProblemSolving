@@ -1,0 +1,17 @@
+/*
+Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, 
+return the string unchanged. */
+
+public String delDel(String str) {
+  String a = "";
+  
+  if (str.length() >= 4) {
+    String s = str.substring(1,4);
+    if(s.equals("del")){
+      a = str.charAt(0) + str.substring(4,str.length());
+      return a;
+    }
+  }
+
+   return str;
+}
