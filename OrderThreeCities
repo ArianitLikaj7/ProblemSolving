@@ -1,4 +1,11 @@
-System.out.print("Enter the first city: ");
+
+/*(Order three cities) Write a program that prompts the user to enter three cities 
+          and displays them in ascending order*/
+          
+    public class OrderThreeCitites{
+        public static void main (String [] args ){
+
+        System.out.print("Enter the first city: ");
         String city1 = sc.nextLine();
         System.out.print("Enter the second city: ");
         String city2 = sc.nextLine();
