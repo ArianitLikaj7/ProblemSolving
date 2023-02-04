@@ -1,0 +1,57 @@
+System.out.println("Shtypni muajin prej 1-12");
+		int muaji = sc.nextInt();
+		String month = "";
+		switch(muaji) {
+		case 1: month = "Janar";
+		        break;
+		case 2: month = "Shkurt";
+                break;
+		case 3: month = "Mars";
+                break;
+		case 4: month = "Prill";
+                break;
+		case 5: month = "Maj";
+		        break;
+		case 6: month = "Qershor";
+                break;
+		case 7: month = "Korrik";
+                break;
+		case 8: month = "Gusht";
+                break;
+		case 9:month = "Shtator";
+                break;
+		case 10: month = "Tetor";
+                break;
+		case 11: month = "Nentor";
+                break;
+		case 12: month = "Dhjetor";
+              break;
+		}
+                
+	    System.out.println("Shtypni vitin prej 1-12");
+		int viti = sc.nextInt();
+		
+		boolean isLeapYear = ((viti % 4 == 0 && viti % 100 != 0) || viti % 400 == 0);
+		
+		if(isLeapYear) {
+			if(muaji == 2) {
+				System.out.println(month + " " + viti + " ka "+ 29 +" dite");
+				System.exit(0);
+			}
+		}
+		
+		
+		boolean cift = muaji % 2  == 0;
+		boolean tek = muaji % 2  == 1;
+		
+	    if (cift && muaji == 2) {
+			
+			System.out.println(month + " "+ viti+ " ka "+28+" dite");
+		}
+		else if (cift && muaji != 2) {
+			System.out.println(month + " "+ viti+ " ka "+30+" dite");
+		}
+		
+		else if (tek) {
+			System.out.println(month + " "+ viti+ " ka "+31+" dite");
+		}
