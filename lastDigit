@@ -1,0 +1,13 @@
+/*
+Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57.
+Note that the % "mod" operator computes remainders, so 17 % 10 is 7.*/
+
+public boolean lastDigit(int a, int b) {
+  int nr1 = a % 10;
+  int nr2 = b % 10;
+  
+  if (nr1 == nr2){
+    return true;
+  }
+  else return false;
+}
